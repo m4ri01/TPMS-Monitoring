@@ -11,7 +11,7 @@ function onMessageArrived(msg){
   // document.getElementById("changeText").innerHTML = "<h1>"+msg.payloadString+"</h1>";
   var topic = ""+msg.destinationName
   console.log(topic);
-  if (topic == "/rtl_433"){
+  if (topic == "/TPMS"){
     var pesan = ""+msg.payloadString;
     var parsePesan = JSON.parse(msg.payloadString);
     var idBan = parsePesan["wheel"];
@@ -48,7 +48,7 @@ function onMessageArrived(msg){
 // Once a connection has been made, make a subscription and send a message.
 
 console.log("Connected ");
-mqtt.subscribe("/rtl_433");
+mqtt.subscribe("/TPMS");
 }
 function MQTTconnect() {
 console.log("connecting to "+ host +" "+ port);
