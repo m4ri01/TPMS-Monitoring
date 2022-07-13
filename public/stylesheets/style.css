@@ -1,8 +1,33 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+.panel {
+  max-width: 800px;
+  height: 350px;
+  background: url(../images/car.svg) no-repeat center center;
+  margin: 0 auto;
+  background-size: 90%;
 }
 
-a {
-  color: #00B7FF;
+.circle1 {
+width: 100px;
+height: 100px;
+line-height: 20px;
+border-radius: 50%;
+font-size: 20px;
+color: #fff;
+text-align: center;
+background: #000;
+display: inline-block;
+margin : 0px 0px 0px 200px;
+}
+.circle2 {
+width: 100px;
+height: 100px;
+line-height: 20px;
+border-radius: 50%;
+font-size: 20px;
+color: #fff;
+text-align: center;
+display: inline-block;
+background: #000;
+margin : 0px 0px 0px 150px;
 }
